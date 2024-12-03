@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StudentInfo>
+    <Student>
+	<StudentName>David Beckham</StudentName>
+	<Stream>Computer Science</Stream>
+	<University>New Castle University</University>
+	</Student>
+    <Student>
+	<StudentName>Peter Henry</StudentName>
+	<Stream>Textile Engineering</Stream>
+	<University>Oxford University</University>
+	</Student>
+</StudentInfo>

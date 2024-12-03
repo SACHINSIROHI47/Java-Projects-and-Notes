@@ -1,0 +1,13 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>Copyright Info</short-name>
+	<description>
+		Developing First Custom Tags
+	</description>
+	<tag>
+		<name>CopyrightTag</name>
+		<tag-class>copyright.CopyrightTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>

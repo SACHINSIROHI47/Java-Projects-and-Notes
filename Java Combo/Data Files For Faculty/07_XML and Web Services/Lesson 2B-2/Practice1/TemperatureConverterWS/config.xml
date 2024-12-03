@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<configuration xmlns="http://java.sun.com/xml/ns/jax-rpc/ri/config">
+	<service
+		name="TempConverterWebService"
+		targetNamespace="urn:Foo"
+		typeNamespace="urn:Foo"
+		packageName="temp_converter">
+		<interface name="temp_converter.TempConverterInterface"/>
+	</service>
+</configuration>

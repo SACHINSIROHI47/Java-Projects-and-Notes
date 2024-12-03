@@ -1,0 +1,80 @@
+How to insert an image into database table? or Write an example for inserting BLOB into table.
+
+Description:
+BLOB is nothing bug Binary Large Object. BLOB is used to store large amount of binary data into database like images, etc. Below example shows how to store images into database rows. 
+
+Code:
+package com.java2novice.jdbc;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class MyBlobInsert {
+
+	public static void main(String a[]){
+		
+		Connection con = null;
+		PreparedStatement ps = null;
+		InputStream is = null;
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			con = DriverManager.
+					getConnection("jdbc:oracle:thin:@<hostname>:<port num>:<DB name>"
+						,"user","password");
+			ps = con.prepareCall("insert into student_profile values (?,?)");
+			ps.setInt(1, 101);
+			is = new FileInputStream(new File("Student_img.jpg"));
+			ps.setBinaryStream(2, is);
+			int count = ps.executeUpdate();
+			System.out.println("Count: "+count);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally{
+			try{
+				if(is != null) is.close();
+				if(ps != null) ps.close();
+				if(con != null) con.close();
+			} catch(Exception ex){}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+Key Concepts
+To insert images into a database, the database must support images. Images are stored in binary in a table cell. The data type for the cell is a binary large object (BLOB), which is a new SQL type in SQL3 for storing binary data. Another new SQL3 type is character large object (CLOB), for storing a large text in the character format. JDBC 2 introduced the interfaces java.sql.Blob and java.sql.Clob to support mapping for these new SQL types. JBDC 2 also added new methods, such as getBlob, setBinaryStream, getClob, setBlob, and setClob, in the interfaces ResultSet, PreparedStatement, and CallableStatement, to access SQL BLOB and CLOB values.
+To store an image in a cell in a table, the corresponding column for the cell must be of the BLOB type. For example, the following SQL statement creates a table whose type for the flag column is BLOB:
+create table Country(name varchar(30), flag blob,
+ description varchar(500));
+In the preceding statement, the description column is limited to 500 characters. The upper limit for the VARCHAR type is 32,672 bytes. For a large character field, you can use the CLOB type, which can store up to 2GB characters.
+To insert a record with images to a table, define a prepared statement like this one:
+PreparedStatement pstmt = connection.prepareStatement(
+ "insert into Country values(?, ?, ?)"); 
+Images are usually stored in files. You may first get an instance of InputStream for an image file and then use the setBinaryStream method to associate the input stream with cell in the table, as follows:
+// Store image to the table cell
+File file = new File(imageFilenames[i]);
+InputStream inputImage = new FileInputStream(file);
+pstmt.setBinaryStream(2, inputImage, (int)(file.length()));
+To retrieve an image from a table, use the getBlob method, as shown here:
+// Store image to the table cell
+Blob blob = rs.getBlob(1);
+ImageIcon imageIcon = new ImageIcon(
+ blob.getBytes(1, (int)blob.length()));

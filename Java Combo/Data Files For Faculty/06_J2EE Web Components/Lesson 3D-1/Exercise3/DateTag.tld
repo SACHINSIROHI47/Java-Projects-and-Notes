@@ -1,0 +1,13 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>Date Information</short-name>
+	<description>
+		Developing Date Custom Tags
+	</description>
+	<tag>
+		<name>DateTag</name>
+		<tag-class>date.DateTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>	

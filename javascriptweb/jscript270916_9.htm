@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+
+
+<body bgcolor="orange" onload=Validate()>
+
+<script language="JavaScript">
+
+function Validate()
+{
+  
+	var password;
+	num1=0;
+	while(num1<3)
+	{
+		password=prompt("Enter Your password");
+		if(password=="098")
+		{
+			alert("Valid Password. Welcome to Mussoorie");
+			window.open("jscript270916_8.htm");
+			break;
+		}
+		else
+		{
+		
+			alert("Invalid Password");
+			if(num1==2)
+			{
+			alert("Bye Bye");
+			}
+		}
+		num1=num1+1;
+	}
+	
+      
+}
+</script>
+
+</body>
+</html>

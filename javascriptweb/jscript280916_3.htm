@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Welcome to XHTML</title>
+<style type="text/css">
+h1{color : red}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<script language="JavaScript">
+
+function writemessage()
+{
+document.open()
+document.write("<h1>hello</h1>") 
+document.write("NIIT Mussoorie<br>") 
+document.write(navigator.appName+"<br>")
+document.write(navigator.appVersion+"<br>")  
+
+}
+
+</script>
+</head>
+<body bgcolor="green">
+<form name="employee">
+<center>
+<h1>HTML</h1>
+<br><br><br><br>
+
+<input type="button" value="Show" onClick="writemessage()">
+</center>
+</form>
+
+
+</body>
+</html>

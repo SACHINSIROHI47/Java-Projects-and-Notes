@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Color</title>
+</head>
+
+<head>
+<title>Welcome to HTML with JAVASCRIPT</title>
+
+</head>
+<body  bgcolor="orange">
+<form name="myform">
+Color : 
+<select name="icolor" onclick="chcolor(myform)">
+<option value="rd">RED
+<option value="gr">GREEN
+<option value="cy">CYAN
+<option value="ol">OLIVE
+<option value="be">BEIGE
+<option value="pi">PINK
+</select>
+
+</option>
+</form>
+
+
+<script language="JavaScript">
+document.write("Welcome to NIIT")
+
+function chcolor(myform)
+{
+
+	if(myform.icolor.value=="rd")
+	{
+	document.bgColor="red"
+	window.status="Red Color is Set"
+	}
+	if(myform.icolor.value=="gr")
+	{
+	document.bgColor="green"
+	window.status="Green Color is Set"
+	}
+	if(myform.icolor.value=="cy")
+	{
+	document.bgColor="cyan"
+	window.status="Cyan Color is Set"
+	}
+	if(myform.icolor.value=="ol")
+	{
+	document.bgColor="olive"
+	window.status="Olive Color is Set"
+	}
+	if(myform.icolor.value=="be")
+	{
+	document.bgColor="beige"
+	window.status="Beige Color is Set"
+	}
+	if(myform.icolor.value=="pi")
+	{
+	document.bgColor="pink"
+	window.status="Pink Color is Set"
+	}
+}
+      
+
+</script>

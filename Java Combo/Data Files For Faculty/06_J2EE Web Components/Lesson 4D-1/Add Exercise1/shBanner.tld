@@ -1,0 +1,17 @@
+<taglib>
+   <tlibversion>1.0</tlibversion>
+   <jspversion>1.2</jspversion>
+   <shortname>first</shortname>
+   <uri></uri>
+   <info>A simple tab library for the examples</info>
+  <tag>
+    <name>shBanner</name>
+    <tagclass>banner.ShBanner</tagclass>
+    <bodycontent>JSP</bodycontent>
+    <attribute>
+    		<name>banner</name>
+		<rtexprvalue>true</rtexprvalue>
+		<required>false</required>
+    </attribute>
+  </tag> 
+</taglib>

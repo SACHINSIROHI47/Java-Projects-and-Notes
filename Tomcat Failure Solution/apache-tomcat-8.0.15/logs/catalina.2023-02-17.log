@@ -1,0 +1,52 @@
+17-Feb-2023 18:15:09.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.15
+17-Feb-2023 18:15:09.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 2 2014 19:25:20 UTC
+17-Feb-2023 18:15:09.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.15.0
+17-Feb-2023 18:15:09.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+17-Feb-2023 18:15:09.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Feb-2023 18:15:09.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JAVA_HOME:             C:\Program Files\Java\jdk1.8.0_291\jre
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_291-b10
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.0.15
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.0.15
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.0.15\conf\logging.properties
+17-Feb-2023 18:15:09.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Feb-2023 18:15:09.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\apache-tomcat-8.0.15\endorsed
+17-Feb-2023 18:15:09.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.0.15
+17-Feb-2023 18:15:09.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.0.15
+17-Feb-2023 18:15:09.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.0.15\temp
+17-Feb-2023 18:15:09.137 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+17-Feb-2023 18:15:09.137 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+17-Feb-2023 18:15:09.685 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1j 15 Oct 2014)
+17-Feb-2023 18:15:36.682 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+17-Feb-2023 18:15:36.974 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+17-Feb-2023 18:15:36.976 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 28849 ms
+17-Feb-2023 18:15:38.719 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+17-Feb-2023 18:15:38.719 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.15
+17-Feb-2023 18:15:40.648 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor C:\apache-tomcat-8.0.15\conf\Catalina\localhost\AptechLearning.xml
+17-Feb-2023 18:15:40.839 WARNING [localhost-startStop-1] org.apache.catalina.startup.SetContextPropertiesRule.begin [SetContextPropertiesRule]{Context} Setting property 'antiJARLocking' to 'true' did not find a matching property.
+17-Feb-2023 18:15:43.562 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [435] milliseconds.
+17-Feb-2023 18:15:43.591 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor C:\apache-tomcat-8.0.15\conf\Catalina\localhost\AptechLearning.xml has finished in 2,943 ms
+17-Feb-2023 18:15:43.593 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.15\webapps\docs
+17-Feb-2023 18:15:43.647 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.15\webapps\docs has finished in 54 ms
+17-Feb-2023 18:15:43.648 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.15\webapps\examples
+17-Feb-2023 18:15:49.284 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.15\webapps\examples has finished in 5,636 ms
+17-Feb-2023 18:15:49.285 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.15\webapps\host-manager
+17-Feb-2023 18:15:49.386 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.15\webapps\host-manager has finished in 101 ms
+17-Feb-2023 18:15:49.387 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.15\webapps\manager
+17-Feb-2023 18:15:49.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.15\webapps\manager has finished in 55 ms
+17-Feb-2023 18:15:49.443 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\apache-tomcat-8.0.15\webapps\ROOT
+17-Feb-2023 18:15:49.487 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\apache-tomcat-8.0.15\webapps\ROOT has finished in 44 ms
+17-Feb-2023 18:15:49.573 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+17-Feb-2023 18:15:49.604 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+17-Feb-2023 18:15:49.605 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12628 ms
+17-Feb-2023 18:15:52.239 INFO [http-apr-8080-exec-7] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/AptechLearning] has started
+17-Feb-2023 18:15:52.586 INFO [http-apr-8080-exec-7] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/AptechLearning] is completed
+17-Feb-2023 18:34:49.194 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Feb-2023 18:34:49.195 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-apr-8080"]
+17-Feb-2023 18:34:49.559 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-apr-8009"]
+17-Feb-2023 18:34:49.617 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+17-Feb-2023 18:34:49.698 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-apr-8080"]
+17-Feb-2023 18:34:49.762 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-apr-8009"]
+17-Feb-2023 18:34:49.829 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-apr-8080"]
+17-Feb-2023 18:34:49.829 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-apr-8009"]

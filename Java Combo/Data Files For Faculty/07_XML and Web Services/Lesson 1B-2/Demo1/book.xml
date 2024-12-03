@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookInfo>
+	<Book>
+		<BookName>Introduction to J2EE</BookName>
+		<BookPrice>$ 33 </BookPrice>
+		<BookAuthor>Tom Harry</BookAuthor>
+	</Book>
+	<Book>
+		<BookName> Introduction to JSP</BookName>
+		<BookPrice>$ 29 </BookPrice>
+		<BookAuthor>Simon Brown</BookAuthor>
+	</Book>
+ </BookInfo>

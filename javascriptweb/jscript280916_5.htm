@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>NAME</title>
+</head>
+<html>
+<head>
+<title>Welcome to XHTML with JAVASCRIPT</title>
+<style type="text/css">
+h1{color : red}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+</head>
+<body bgcolor="green">
+
+<form name="employee" method="get" action="http://www.sbi.co/saveform.asp">
+NAME : <input type="text" name="iname" size=15 maxlength=50 ><br><br>
+
+PASSWORD : <input type="password" name="ipassword" size=15 maxlength=50><br><br>
+
+EDUCATION DETAILS :<textarea rows="5" name="ieduaction" cols="26" value="Science Graduate" ></textarea><br><br>
+
+<p>GENDER : <br		>
+Male : <input type = "radio" name = "igender" value="Male"><br>
+Female : <input type = "radio" name = "igender" value="Female"><br><br>
+
+GRADUATE :
+<input type = "checkbox" checked name = "igraduate" value="Graduate"><br><br>
+
+COUNTRY : 
+<select name="icountry">
+<option value="IN">INDIA
+<option value="US">USA
+<option value="JA">JAPAN
+<option value="UA">UAE
+<option value="CH">CHINA
+<option value="BR">BRITAIN
+</select>
+
+File : <input type = "file" name="iflie"></p>
+<p>
+<BR>
+
+<input type="button" value="Save" onClick="Validate(employee)">
+</p>
+</form>
+<script language="JavaScript">
+
+function Validate(employee)
+{
+    var str3;
+   if(employee.iname.value == "")
+   {
+     	 alert("Enter the Name");	    
+	    
+   }
+   else if(employee.ipassword.value == "")
+   {
+      	alert("Enter the Password");     	
+   }
+  
+   else if(employee.ieduaction.value == "")
+   {
+     	 alert("Enter the Education Details");      	
+   }
+  
+  else if(employee.igender[0].checked==false && employee.igender[1].checked==false)
+   {
+     	 alert("Choode Gender");      	 
+
+    }
+
+   else if(employee.icountry.value == "")
+   {
+      	alert("Select the Country");
+   }
+  else  if(employee.iflie.value == "")
+   {
+      	alert("Select File");      
+   }
+ 	  	
+   else 
+   {   
+    
+   var str = employee.iname.value;
+   var str1 = employee.ipassword.value;
+   var str2 = employee.ieduaction.value;    	
+   var str5 = employee.icountry.value; 
+   var str6 = employee.iflie.value;  
+   
+    if(employee.igender[0].checked==true)
+   {
+   str3 = employee.igender[0].value;   
+  } 
+  if(employee.igender[1].checked==true)
+   {
+	str3 = employee.igender[1].value;     
+   }  
+     
+     if(employee.igraduate.checked==true)
+   { 
+	 var str4 = employee.igraduate.value;
+   }
+  else
+  {
+     str4 = "Under Graduate";
+  }
+  
+  // employee.submit();
+   
+	document.open()
+   document.write("<h1>Accounts Details</h1>") 
+
+    document.write("You Name is : "+str+"<br><br>");
+ 
+    document.write("You Password is : "+str1+"<br><br>");   
+   
+	
+   document.write("Your Education Details : "+str2+"<br><br>"); 
+
+   document.write("Your  Gender : "+str3+"<br><br>");   
+    
+ 
+    document.write("Your Education : "+str4+"<br><br>"); 
+ 	 
+   
+    document.write("Your Country is : "+str5+"<br><br>");
+    
+    
+     document.write("Your Selected File : "+str6+"<br><br>");
+     
+       document.bgColor="pink";
+ }
+}
+
+</script>
+</body>
+</html>

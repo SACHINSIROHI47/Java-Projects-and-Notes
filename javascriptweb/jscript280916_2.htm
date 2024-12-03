@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Welcome to XHTML</title>
+<style type="text/css">
+h1{color : red}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+<script language="JavaScript">
+
+function onsub()
+{
+var str = confirm("Do u want to display file")
+	if(str)
+	{
+		var fname =prompt("Enter file name")
+		window.open(fname)
+				
+	}
+	else
+	{
+		alert("File is not selected")
+	}
+}
+</script>
+</head>
+
+<body bgcolor="beige">
+
+<form>
+<center>
+<h1>DHTML</h1>
+<br><br><br><br>
+<input type="button" value="Show" onClick="onsub()">
+</center>
+</form>
+</body>
+</html>

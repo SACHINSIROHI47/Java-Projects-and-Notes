@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Welcome to XHTML</title>
+<style type="text/css">
+.small{font-size:20;color:red}
+.large{font-size:50;color:green}
+</style>
+
+
+</head>
+<script language="JavaScript">
+function increase1()
+{
+	myprod1.className='large';
+}
+function decrease1()
+{
+	myprod1.className='small';
+}
+function increase2()
+{
+	myprod2.className='large';
+}
+function decrease2()
+{
+	myprod2.className='small';
+}
+function increase3()
+{
+	myprod3.className='large';
+}
+function decrease3()
+{
+	myprod3.className='small';
+}
+</script>
+
+
+<body bgcolor="beige">
+
+<form>
+
+<ol>
+<li id="myprod1" onmouseover="increase1()"  onmouseout="decrease1()">fruiuts
+<li id="myprod2" onmouseover="increase2()"  onmouseout="decrease2()">choclate
+<li id="myprod3" onmouseover="increase3()" onmouseout="decrease3()">stationary</ol>
+
+</form>
+</body>
+</html>

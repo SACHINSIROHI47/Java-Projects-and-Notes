@@ -1,0 +1,37 @@
+<title>New Page 5</title>
+<style type="text/css">
+
+
+</style>
+
+</head>
+
+<body>
+
+<p>
+<img id="image1" border="0" src="images/image3.JPG" width="249" height="191" onclick="selectpic()"></p>
+<div>
+<input id="hid" type="file" size=1>
+</div>
+
+<script type="text/javascript">
+function selectpic()
+{
+hid.click(); 
+
+var str2="";
+str3="";
+var str = hid.value;
+
+document.getElementById("image1").src=str;
+
+
+};
+
+</script>
+
+
+</body>
+
+</html>
+

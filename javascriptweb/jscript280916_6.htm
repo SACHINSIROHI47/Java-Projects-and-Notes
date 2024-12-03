@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 2</title>
+</head>
+
+<body>
+<p>
+        <img alt="" src="file:///D:/BACKUP/javascriptweb/images/image3.JPG" 
+            style="height: 377px; width: 682px" id="imgClickAndChange" onclick="changeImage()"  />
+</p>
+<script language="javascript">
+    function changeImage() 
+    {
+		        if (document.getElementById("imgClickAndChange").src == "file:///D:/BACKUP/javascriptweb/images/image3.JPG") 
+        {
+            document.getElementById("imgClickAndChange").src = "file:///D:/BACKUP/javascriptweb/images/image4.jpg";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "file:///D:/BACKUP/javascriptweb/images/image3.JPG";
+        }
+    }
+</script>
+
+</body>
+
+</html>

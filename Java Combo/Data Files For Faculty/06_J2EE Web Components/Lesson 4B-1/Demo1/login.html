@@ -1,0 +1,30 @@
+<html>
+ <head>
+   <title>
+      Form-based Login Authentication
+   </title>
+ </head>
+ <body bgcolor="lightblue">
+   <br><br>
+   <center>
+    <h2>Please Login to Authenticate Yourself</h2>
+  
+    <form method="post" action="j_security_check">
+     <table>
+      <tr>
+       <td>User Name: </td>
+   <td><input type="text" name="j_username"></td>
+      </tr>
+      <tr>
+       <td>Password: </td>
+   <td><input type="password" name="j_password"></td>      </tr>
+             
+      <tr>
+       <td><input type="submit" value="Login"></td>
+       <td><input type="reset" value="Reset"></td>
+      </tr>
+     </table>
+    </form>
+   </center>
+  </body>
+</html>
